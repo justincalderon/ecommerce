@@ -25,6 +25,7 @@ for (var i = 0; i < skateboardArray.length; i++) {
   // create new elements for each object
   var newItem = document.createElement("div")
   var newDiv = document.createElement("div")
+  // var newDiv2 = document.createElement("div")
   var nameH1 = document.createElement("h1")
   var sizeH4 = document.createElement("h4")
   var priceH4 = document.createElement("h4")
@@ -44,9 +45,12 @@ for (var i = 0; i < skateboardArray.length; i++) {
 
   // update class attributes
   image.className = "img-responsive"
-  btn.className = "btn btn primary btn-lg"
-  newItem.className = "col-sm-4"
-  newDiv.className = "skateboard skateName" + [i] + "thumbnail"
+  btn.className = "btn btn-primary"
+  newItem.className = "row justify-content-center"
+  newDiv.className = "col-xs-4"
+  // newDiv2.className = "col-xs-4"
+  nameH1.className = "display-2"
+
 
   // add text to elements
   nameH1.appendChild(skateName)
